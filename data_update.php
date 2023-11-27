@@ -23,7 +23,7 @@ if(isset($_POST['update_data'])){
         $upload = mysqli_query($conn,$update_data);
         var_dump($upload);
         if($upload){
-            header('location:index.php');
+            header('location:admin.php');
             exit;
 
         }else{
@@ -136,7 +136,7 @@ var_dump($_POST);
             </div>
 
             <input type="submit" class="btn" name="update_data" value="update data">
-            <a href="index.php" class="btn">go back</a>
+            <a href="admin.php" class="btn">go back</a>
 
 
             </form>

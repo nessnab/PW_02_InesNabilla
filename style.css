@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root {
-    --green: #27ae60;
-    --black: #333;
+    --green: #ff2770;
+    --black: #000;
     --white: #fff;
-    --bg-color: #eee;
+    --bg-color: #23242a;
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    --border: .1rem solid var(--black);
+    --border: .1rem solid var(--green);
 }
 
 *{
@@ -21,6 +21,7 @@
 html{
     font-size: 62.5%;
     overflow-x: scroll;
+    background-color: var(--bg-color);
 }
 
 .btn{
@@ -35,6 +36,10 @@ html{
     color: var(--white);
     text-align: center;
     transition: .5s ease-in-out;
+}
+.btn.logout{
+    /* display: flex; */
+    width: 7vw;
 }
 .btn:hover{
     background: var(--black);
@@ -72,11 +77,11 @@ html{
     margin: 0 auto;
     padding: 2rem;
     border-radius: .5rem;
-    background: var(--bg-color);
+    background: var(--black);
 }
 .form-container form h3{
     text-transform: uppercase;
-    color: var(--black);
+    color: #45f3ff;
     margin-bottom: 1rem;
     text-align: center;
     font-size: 2.5rem;
@@ -106,6 +111,12 @@ html{
 
 .table-display{
     margin: 2rem 0;
+    color: var(--white);
+}
+.table-display h3{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #45f3ff;
 }
 .table-display .data-display{
     width: 100%;
